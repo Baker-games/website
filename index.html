@@ -7,17 +7,56 @@
   </head>
 
   <body>
-    <img src="images/logo.png" class="corner-logo" />
+    <!-- Navbar -->
+    <nav class="navbar">
+      <p class="navbar-title">Welcome to</p>
+      <img src="images/logo.png" class="navbar-logo" />
+    </nav>
 
-    <section id="about" class="about-section">
-      <h2 class="about-title">About Us 🥐</h2>
-      <p class="about-text">
-        We’re a small, passionate team that loves creating adorable, friendly,
-        and easy-to-use digital experiences. Our mission is to make technology
-        feel warm, personal, and fun — like a cozy pastel hug. 💖
-      </p>
+    <!-- About -->
+    <section class="about-section">
+      <!-- Leader-->
+      <h1 class="about-us-header">
+        So you`re curious who we are, partner… Dust off your hat, warm up your
+        keyboard, and let`s bake this story together
+      </h1>
 
-      <div class="about-cards">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About us</h2>
+          <p>
+            We’re a small (but mighty) gaming studio crafted by our leader and
+            main copy copy-paster(pun)
+            <strong>Francisco Nicolau The Sargo Froes.</strong><br /><br />
+            What started as a passion for games and technology quickly evolved
+            into a mission to build cool experiences for others. <br /><br />
+            And yes… to the left or below (depends on what are you using to read
+            our beutifull website) is the glorious man himself.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="images/the_leader.png" />
+          <p class="about-leader-caption">Our team leader - NOTE: He is shy!</p>
+        </div>
+
+        <div class="about-text">
+          <h2>About us</h2>
+          <p>
+            We’re a small (but mighty) gaming studio crafted by our leader and
+            main copy copy-paster(pun)
+            <strong>Francisco Nicolau The Sargo Froes.</strong><br /><br />
+            What started as a passion for games and technology quickly evolved
+            into a mission to build cool experiences for others. <br /><br />
+            And yes… to the left or below (depends on what are you using to read
+            our beutifull website) is the glorious man himself.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="images/the_leader.png" />
+          <p class="about-leader-caption">Our team leader - NOTE: He is shy!</p>
+        </div>
+        <!-- Cards-->
+        <!-- 
         <div class="about-card pink">
           <h3>✨ Mission</h3>
           <p>Spread joy through charming digital creations.</p>
@@ -31,8 +70,21 @@
         <div class="about-card green">
           <h3>💞 Values</h3>
           <p>Kindness, creativity, and delightful details.</p>
-        </div>
+        </div> -->
       </div>
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const imgs = document.querySelectorAll(".about-image");
+
+        imgs.forEach((img) => {
+          setInterval(() => {
+            const angle = Math.random() * 20 - 8; // -4 to +4 degrees
+            img.style.transform = `rotate(${angle}deg)`;
+          }, 1200); // change angle every 1.2 seconds
+        });
+      });
+    </script>
   </body>
 </html>
