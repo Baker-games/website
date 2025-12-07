@@ -50,35 +50,31 @@ body {
   margin-bottom: 200px;
 }
 
-.about-us-header {
+.about-header {
   text-align: center;
-  font-size: 2.6rem;
-  font-weight: 800;
+  font-size: 4.5rem;
   color: #2d1b07;
-
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 40px auto 20px;
-  padding: 20px 10px;
-
+  padding-top: 20px;
   line-height: 1.3;
   letter-spacing: -0.5px;
-
   position: relative;
-
-  /* Slight "gamer glow" */
   text-shadow: 2px 2px 0 #fff3, 4px 4px 0 #ffcd94;
 }
 
-.about-us-header::after {
-  content: "";
-  width: 120px;
-  height: 4px;
-  background: linear-gradient(90deg, #ffb66a, #ff9441);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 10px;
+@media (max-width: 600px) {
+  .about-header {
+    font-size: 4rem;
+  }
+}
+
+/* Scroll down tip text*/
+.about-header .subtext {
+  display: block;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 10px;
 }
 
 .about-container {
@@ -91,15 +87,18 @@ body {
 }
 
 .about-text {
-  max-width: 500px;
-  font-size: 1.35rem;
-  text-align: center;
+  max-width: 1600px;
+  font-size: 1.65rem;
+  text-align: justify;
   line-height: 1.75;
   font-weight: 400;
+  padding: 0, 50 px;
 }
-
-.about-text strong {
-  font-weight: 600;
+@media (max-width: 600px) {
+  .about-text {
+    padding: 0 18px;
+    font-size: 1.4rem;
+  }
 }
 
 .about-image-text {
@@ -113,8 +112,36 @@ body {
   width: 400px;
   height: 370px;
   border-radius: 18px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between; /* spaces boxes evenly */
+  margin-top: 30px;
+  gap: 20px; /* optional: space between boxes */
+  flex-wrap: wrap; /* makes it responsive on smaller screens */
+}
+
+.stat-box {
+  background-color: #f5f0ff; /* light purple like your screenshot */
+  text-align: center;
+  padding: 20px 10px;
+  flex: 1; /* makes boxes equal width */
+  border-radius: 10px;
+  min-width: 120px; /* ensures they don’t get too small */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stat-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 0.9em;
+  color: #555;
 }
 
 .about-cards {
@@ -167,7 +194,6 @@ body {
 }
 
 .sub-navbar p {
-  font-size: 16px;
+  font-size: 20px;
   margin: 2px 0;
-  text-shadow: 1px 1px 0 #fff6;
 }

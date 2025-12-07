@@ -17,7 +17,7 @@ It contains static pages with simple content and no backend or advanced features
 - **HTTP → HTTPS:** All HTTP requests are redirected to HTTPS
 - **SSL Certificates:** Stored in `/etc/ssl/private/` (root access required)
 - **Server Type:** IPv6-only server, proxied via Cloudflare to support IPv4 access
-- **Workflow** If you want to work on this website, you can just deploy a local server using live server or similar tools. When finished, just ssh into the raspberry and pull from origin. I did not see a reason to divide this into prod and making pipelines
+- **Workflow** If you want to work on this website, you can just deploy a local server using live server or similar tools. When finished, just ssh into the raspberry and pull from origin. I did not see a reason to divide this into prod and making CIs yet
 
 ## Accessing the Raspberry Pi Locally
 
