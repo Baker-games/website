@@ -38,6 +38,8 @@ It contains static pages with simple content and no backend or advanced features
    ssh sirmadeira@[RaspberryPiIP]
    ```
 
+   In this case it is 192.168.0.15 or 2804:14c:7a:8c6e:da3a:ddff:fe1f:6c8e . It is not static so it might change
+
 ---
 
 ## Managing Nginx Configuration
