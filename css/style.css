@@ -50,6 +50,7 @@ body {
   margin-bottom: 200px;
 }
 
+/* Welcome text*/
 .about-header {
   text-align: center;
   font-size: 4.5rem;
@@ -87,16 +88,17 @@ body {
 }
 
 .about-text {
-  max-width: 1600px;
-  font-size: 1.65rem;
+  max-width: 1500px;
+  font-size: 1.75rem;
   text-align: justify;
   line-height: 1.75;
   font-weight: 400;
-  padding: 0, 50 px;
+  margin: 0 100px;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 700px) {
   .about-text {
-    padding: 0 18px;
+    margin: 0 20px;
     font-size: 1.4rem;
   }
 }
@@ -109,34 +111,31 @@ body {
 }
 
 .about-image img {
-  width: 400px;
-  height: 370px;
-  border-radius: 18px;
+  width: 450px;
+  height: 450px;
   padding: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .stats-container {
   display: flex;
-  justify-content: space-between; /* spaces boxes evenly */
+  justify-content: space-between;
   margin-top: 30px;
-  gap: 20px; /* optional: space between boxes */
-  flex-wrap: wrap; /* makes it responsive on smaller screens */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .stat-box {
-  background-color: #f5f0ff; /* light purple like your screenshot */
+  background-color: #f5f0ff;
   text-align: center;
-  padding: 20px 10px;
-  flex: 1; /* makes boxes equal width */
+  flex: 1;
   border-radius: 10px;
-  min-width: 120px; /* ensures they don’t get too small */
+  min-width: 120px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .stat-box h3 {
   font-size: 1.5em;
-  margin-bottom: 5px;
 }
 
 .stat-box p {
@@ -144,34 +143,38 @@ body {
   color: #555;
 }
 
-.about-cards {
+.about-social-buttons {
+  margin-top: 15px;
   display: flex;
-  flex-direction: column;
-  gap: 25px;
+  justify-content: center;
+  gap: 18px;
+}
+
+.about-social-btn {
+  width: 55px;
+  height: 55px;
+  background: #f2f4f8;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  margin: 40px 0;
+  justify-content: center;
+  transition: 0.25s ease;
 }
 
-.about-card {
-  width: 100%;
-  max-width: 400px;
-  padding: 25px;
-  border-radius: 18px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+.about-social-btn:hover {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2),
+    -3px -3px 6px rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px);
 }
 
-.about-card.pink {
-  background: #ffb5ac;
+.about-social-btn img {
+  width: 26px;
+  opacity: 0.75;
+  transition: 0.25s;
 }
 
-.about-card.blue {
-  background: #c7e9ff;
-}
-
-.about-card.green {
-  background: #eaffc7;
+.about-social-btn:hover img {
+  opacity: 1;
 }
 
 .sub-navbar {

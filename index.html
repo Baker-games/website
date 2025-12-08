@@ -14,6 +14,7 @@
     </nav>
 
     <section class="about-section">
+      <!-- Title + tip-->
       <h1 class="about-header">
         Welcome to our little website!<br />
         <span class="subtext"
@@ -73,60 +74,64 @@
         </div>
 
         <!-- About the team -->
-        <!-- <div class="about-text">
-          <h2>About the Team</h2>
+        <div class="about-text">
+          <h1>About the Team</h1>
+
           <p>
-            Despite the plural, our “team” is actually a one-man powerhouse.
-            Meet <strong>Francisco Nicolau Sargo Froes</strong> — the mind,
-            muscle, and motivation behind everything you see here.
+            Although we say “team,” the real driving force behind everything
+            here is just one person:
+            <strong>Francisco Nicolau Sargo Froes</strong>
           </p>
 
           <p>
             Francisco holds a degree in Production Engineering from
-            <strong>Unicamp</strong>
-            and has built his career working with major companies in roles
-            spanning
-            <strong>Product Management</strong> and
-            <strong>Data Engineering</strong>.
+            <strong>Unicamp</strong>, a Master`s degree from
+            <strong>USP</strong>, and has built his career working with leading
+            companies in roles across <strong>Product Management</strong> and
+            <strong>Data Science</strong>. He combines analytical thinking with
+            creativity and a genuine passion for building meaningful projects.
           </p>
+
           <p>
-            From time to time the company hires some free lancers that helps us
-            build some very nice art. A few notable mentions are:
-            <strong>Ian Castanhos and João Vitor</strong>
+            Along the way, we`re fortunate to collaborate with talented
+            freelancers who help bring our ideas to life. Special thanks to
+            <strong>Ian Castanhos</strong> and <strong>João Vitor</strong>,
+            whose artistic contributions always elevate our work.
           </p>
         </div>
-        <div class="about-image">
-          <img src="images/me.png" />
-          <p class="about-image-text">
-            Francisco — Founder & Team Leader <br />
-            Wait that is not Francisco, that is nanomachines son!
-          </p>
-        </div> -->
 
-        <!-- Cards-->
-        <!-- <div class="about-cards">
-          <div class="about-card pink">
-            <h3>✨ Mission</h3>
-            <p>Make fun games for everyone</p>
+        <div>
+          <div class="about-image">
+            <img src="images/me.png" />
+            <p class="about-image-text">Note: He is prettier in person</p>
           </div>
 
-          <div class="about-card blue">
-            <h3>🌈 Vision</h3>
-            <p>To make the best game ever!</p>
-          </div>
+          <div class="about-social-buttons">
+            <a href="https://github.com/Sirmadeira" class="about-social-btn">
+              <img src="images/github.png" alt="GitHub" />
+            </a>
 
-          <div class="about-card green">
-            <h3>💞 Values</h3>
-            <p>Happiness, happiness, happiness</p>
+            <a
+              href="https://www.linkedin.com/in/francisco-nicolau-sargo-froes-0288a2195/"
+              class="about-social-btn"
+            >
+              <img src="images/linkedin.png" alt="LinkedIn" />
+            </a>
+
+            <a
+              href="https://stackoverflow.com/users/12845199/ingl0r1am0r1"
+              class="about-social-btn"
+            >
+              <img src="images/stack_overflow.png" alt="Download CV" />
+            </a>
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
 
     <footer class="sub-navbar">
       <div class="sub-left">
         <p>📧 nicolau@bakegames.com<br /></p>
-        <p>🌐 www.bakegames.com.br</p>
       </div>
 
       <div class="sub-center">
@@ -139,18 +144,5 @@
         <p>🎮 Crafted with love & chaos</p>
       </div>
     </footer>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const imgs = document.querySelectorAll(".about-image");
-
-        imgs.forEach((img) => {
-          setInterval(() => {
-            const angle = Math.random() * 20 - 8; // -4 to +4 degrees
-            img.style.transform = `rotate(${angle}deg)`;
-          }, 1200); // change angle every 1.2 seconds
-        });
-      });
-    </script>
   </body>
 </html>
