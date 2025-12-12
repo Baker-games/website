@@ -151,8 +151,8 @@ body {
 }
 
 .about-social-btn {
-  width: 55px;
-  height: 55px;
+  width: 100px;
+  height: 100px;
   background: #f2f4f8;
   border-radius: 50%;
   display: flex;
@@ -168,7 +168,7 @@ body {
 }
 
 .about-social-btn img {
-  width: 26px;
+  width: 50px;
   opacity: 0.75;
   transition: 0.25s;
 }
