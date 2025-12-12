@@ -53,7 +53,7 @@ body {
 /* Welcome text*/
 .about-header {
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   color: #2d1b07;
   max-width: 1600px;
   margin: 40px auto 20px;
@@ -82,13 +82,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 100px;
   flex-wrap: wrap;
   max-width: 100%;
 }
 
 .about-text {
-  max-width: 1600px;
+  max-width: 1800px;
   font-size: 2.2rem;
   text-align: justify;
   line-height: 1.75;
@@ -144,7 +144,7 @@ body {
 }
 
 .about-social-buttons {
-  margin-top: 15px;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   gap: 18px;
