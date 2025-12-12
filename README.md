@@ -38,7 +38,7 @@ It contains static pages with simple content and no backend or advanced features
    ssh sirmadeira@[RaspberryPiIP]
    ```
 
-   In this case it is 192.168.0.15 or 2804:14c:7a:8c6e:da3a:ddff:fe1f:6c8e . It is not static so it might change
+   In this case the easiest to way identify is just enter your router: http://192.168.0.1/2.0/gui/login, and he will show everyone connected to it!
 
 ---
 
