@@ -88,8 +88,8 @@ body {
 }
 
 .about-text {
-  max-width: 1500px;
-  font-size: 1.75rem;
+  max-width: 1600px;
+  font-size: 2.2rem;
   text-align: justify;
   line-height: 1.75;
   font-weight: 400;
@@ -111,8 +111,8 @@ body {
 }
 
 .about-image img {
-  width: 450px;
-  height: 450px;
+  width: 600px;
+  height: 600px;
   padding: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
