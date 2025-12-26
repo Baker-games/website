@@ -69,3 +69,4 @@ It contains static pages with simple content and no backend or advanced features
 
 1. Take a loot at this forum https://forums.raspberrypi.com/viewtopic.php?t=311451, and done
 2. In my case it something decided it was a good idea to block my IPV6
+3. sysctl -a | grep disable_ipv6 - This command is handy
